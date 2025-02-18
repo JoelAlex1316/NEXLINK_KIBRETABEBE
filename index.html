@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXLINK</title>
+    <link rel="shortcut icon" type="image/png" href="nexlink.png">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="background"></div>
+    <div class="business-card">
+        <div class="profile">
+            <img src="pp.jpg" alt="Profile Picture">
+            <h1>Kibret Abebe</h1>
+            <p class="title">R.N Anesthetist<br>
+              <span>Driving social enterpreneurship forward</span>            </p>
+           <a href="https://tebitaambulance.com"><p class="company">CEO OF TEBITA AMBULANCE</p></a> 
+        </div>
+        <div class="social-icons">
+            <a href="tel:+251910912773" target="_blank" class="phone"><i class="fa fa-phone"></i></a>
+            <a href="mailto:Kibret@eastafricaes.com" target="_blank" class="gmail"> <i class="fa fa-envelope"></i></a>
+            <a href="https://www.instagram.com/kibe.rut?igsh=MXc0YmUwdDR2YTYybg==" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@kibret.tuffa?_t=ZM-8tgjtDwssly&_r=1" target="_blank" class="tiktok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.facebook.com/share/15xsV35X6E/" target="_blank" class="facebook"><i class="fab fa-facebook"></i></a>
+        </div>
+      
+        <div class="previous-works">
+          <a href="https://tebitambulance.com/">
+              <div class="portfolio-card">
+                  <div class="profile-pic">
+                      <img src="tebita.png" alt="Tebita Ambulance">
+                  </div>
+                  <div class="work-details">
+                      <h3>CEO of TEBITA AMBULANCE</h3>
+                      <p>In an emergency, dial 8035 in Ethiopia.</p>
+                  </div>
+              </div>
+          </a>
+          
+          <a href="https://socialenterpriseethiopia.org/">
+            <div class="portfolio-card">
+                <div class="profile-pic">
+                    <img src="Social enterprise (2).png" alt="Tebita Ambulance">
+                </div>
+                <div class="work-details">
+                    <h3>President of Social Enterprise Ethiopia</h3>
+                    <p>Driving social enterpreneurship forward!</p>
+                </div>
+            </div>
+        </a>
+          
+      </div>
+
+    <div class="mapp">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d995.3606381096837!2d38.79216216956899!3d9.027523899439618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85001ee00be1%3A0xe1a1d67bd070ea7!2sTebita%20Ambulance%20Pre%20Hospital!5e1!3m2!1sen!2set!4v1738840539780!5m2!1sen!2set" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>        
+<div class="save-contact-btn">
+    <button class="button" id="saveContact">
+        <span class="button__text">Save Contact</span>
+        <span class="button__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="svg">
+                <path d="M5 3v18h14V8l-5-5H5z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14 3v5h5M10 13h4M10 17h4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </span>
+    </button>
+</div><br>
+
+<a href="https://nexgentechnologieset.com">
+<div class="join-nexlink-btn">
+  <button class="button" id="joinNexlink">
+      <span class="button__text">Join Kibret Abebe on NEXLINK</span>
+      
+  </button>
+</div>
+</a>
+
+    </div>
+    
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script>
+        function checkConnection() {
+            fetch("https://www.google.com", { method: "HEAD", mode: "no-cors" })
+                .then(() => {
+                    // Online: Redirect to your website
+                    window.location.href = "kibret.nexgentechnologieset.com";
+                })
+                .catch(() => {
+                    // Offline: Trigger automatic contact download
+                    window.location.href = "contact.vcf";
+                    setTimeout(() => {
+                        document.getElementById("offline-message").style.display = "block";
+                    }, 2000); // Show message after 2 seconds
+                });
+        }
+    </script>
+</body>
+</html>
